@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { MediaArt } from "@/components/ui/MediaArt";
 import { COLLECTIONS } from "@/data/collections";
 
 export function FeaturedCollections() {
@@ -33,10 +33,12 @@ export function FeaturedCollections() {
                 index === 0 ? "aspect-[4/5] sm:col-span-2 sm:row-span-2 sm:aspect-auto" : "aspect-[4/5]"
               }`}
             >
-              <PlaceholderArt
+              <MediaArt
+                src={collection.src}
                 motif={collection.motif}
                 tone={collection.tone}
                 alt={collection.name}
+                sizes="(min-width: 640px) 33vw, 100vw"
                 className="absolute inset-0 h-full w-full transition-transform duration-500 ease-out group-hover:scale-[1.05]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-transparent to-transparent" />

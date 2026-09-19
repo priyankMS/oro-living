@@ -1,7 +1,6 @@
 "use client";
 
 import { SPACES } from "@/data/spaces";
-import { formatPrice } from "@/lib/utils";
 import type { ShopFilters } from "@/lib/shop";
 
 const AVAILABILITY_LABELS: Record<string, string> = {
@@ -18,8 +17,6 @@ interface FiltersProps {
     materials: string[];
     colors: string[];
     availability: string[];
-    minPrice: number;
-    maxPrice: number;
   };
   showSpaceFilter?: boolean;
 }
@@ -106,34 +103,6 @@ export function Filters({ filters, onChange, facets, showSpaceFilter = true }: F
             onChange={() => onChange({ ...filters, colors: toggle(filters.colors, color) })}
           />
         ))}
-      </FilterGroup>
-
-      <FilterGroup title="Price">
-        <div className="flex items-center gap-3 text-sm text-muted">
-          <input
-            type="number"
-            inputMode="numeric"
-            placeholder={formatPrice(facets.minPrice)}
-            value={filters.minPrice ?? ""}
-            onChange={(event) =>
-              onChange({ ...filters, minPrice: event.target.value ? Number(event.target.value) : undefined })
-            }
-            className="h-10 w-full min-w-0 border border-border px-3 text-ink"
-            aria-label="Minimum price"
-          />
-          <span aria-hidden>&ndash;</span>
-          <input
-            type="number"
-            inputMode="numeric"
-            placeholder={formatPrice(facets.maxPrice)}
-            value={filters.maxPrice ?? ""}
-            onChange={(event) =>
-              onChange({ ...filters, maxPrice: event.target.value ? Number(event.target.value) : undefined })
-            }
-            className="h-10 w-full min-w-0 border border-border px-3 text-ink"
-            aria-label="Maximum price"
-          />
-        </div>
       </FilterGroup>
 
       <FilterGroup title="Availability">

@@ -21,9 +21,9 @@ export const PRODUCTS: Product[] = [
     price: 18999,
     compareAtPrice: 22999,
     images: [
-      { motif: "lounge-chair", tone: "olive", alt: "Kori Lounge Chair on a balcony" },
-      { motif: "lounge-chair", tone: "sand", alt: "Kori Lounge Chair, side profile" },
-      { motif: "lounge-chair", tone: "charcoal", alt: "Kori Lounge Chair cushion detail" },
+      { motif: "lounge-chair", tone: "olive", alt: "Kori Lounge Chair on a balcony", src: "/images/products/kori-lounge-chair/1.jpg" },
+      { motif: "lounge-chair", tone: "sand", alt: "Kori Lounge Chair, side profile", src: "/images/products/kori-lounge-chair/2.jpg" },
+      { motif: "lounge-chair", tone: "charcoal", alt: "Kori Lounge Chair cushion detail", src: "/images/products/kori-lounge-chair/3.jpg" },
     ],
     material: "Powder-coated aluminium, quick-dry foam, woven outdoor fabric",
     frameMaterial: "Powder-coated aluminium",
@@ -85,9 +85,9 @@ export const PRODUCTS: Product[] = [
     price: 64999,
     compareAtPrice: 74999,
     images: [
-      { motif: "sofa", tone: "sand", alt: "Avani Modular Sofa on a rooftop terrace" },
-      { motif: "sofa", tone: "olive", alt: "Avani Modular Sofa, corner configuration" },
-      { motif: "sofa", tone: "charcoal", alt: "Avani Modular Sofa fabric detail" },
+      { motif: "sofa", tone: "sand", alt: "Avani Modular Sofa on a rooftop terrace", src: "/images/products/avani-modular-sofa/1.jpg" },
+      { motif: "sofa", tone: "olive", alt: "Avani Modular Sofa, corner configuration", src: "/images/products/avani-modular-sofa/2.jpg" },
+      { motif: "sofa", tone: "charcoal", alt: "Avani Modular Sofa fabric detail", src: "/images/products/avani-modular-sofa/3.jpg" },
     ],
     material: "Marine-grade aluminium, fast-drain foam, solution-dyed fabric",
     frameMaterial: "Marine-grade aluminium",
@@ -186,8 +186,8 @@ export const PRODUCTS: Product[] = [
       "Mira brings a sculptural, low profile to small seating groups. The tabletop is cast in a weatherproof concrete-effect composite that resists staining, paired with a slim tripod aluminium base.",
     price: 8999,
     images: [
-      { motif: "side-table", tone: "sand", alt: "Mira coffee table on a balcony" },
-      { motif: "side-table", tone: "olive", alt: "Mira coffee table tabletop detail" },
+      { motif: "side-table", tone: "sand", alt: "Mira coffee table on a balcony", src: "/images/products/mira-coffee-table/1.jpg" },
+      { motif: "side-table", tone: "olive", alt: "Mira coffee table tabletop detail", src: "/images/products/mira-coffee-table/2.jpg" },
     ],
     material: "Weatherproof composite, powder-coated aluminium",
     frameMaterial: "Powder-coated aluminium",
@@ -216,9 +216,9 @@ export const PRODUCTS: Product[] = [
     price: 54999,
     compareAtPrice: 61999,
     images: [
-      { motif: "daybed", tone: "olive", alt: "Tanaya Daybed on a rooftop" },
-      { motif: "daybed", tone: "charcoal", alt: "Tanaya Daybed weave detail" },
-      { motif: "daybed", tone: "sand", alt: "Tanaya Daybed cushions" },
+      { motif: "daybed", tone: "olive", alt: "Tanaya Daybed on a rooftop", src: "/images/products/tanaya-daybed/1.jpg" },
+      { motif: "daybed", tone: "charcoal", alt: "Tanaya Daybed weave detail", src: "/images/products/tanaya-daybed/2.jpg" },
+      { motif: "daybed", tone: "sand", alt: "Tanaya Daybed cushions", src: "/images/products/tanaya-daybed/3.jpg" },
     ],
     material: "UV-stabilised synthetic rattan, marine-grade foam, fade-resistant fabric",
     frameMaterial: "Powder-coated steel with synthetic rattan weave",
@@ -304,8 +304,8 @@ export const PRODUCTS: Product[] = [
       "Veda hangs from a freestanding A-frame, so it can be placed anywhere on a veranda or lawn without ceiling mounting. The seat cushion is a dense quick-dry foam finished in a woven fabric built for shaded outdoor use.",
     price: 32999,
     images: [
-      { motif: "swing", tone: "sand", alt: "Veda swing seat on a veranda" },
-      { motif: "swing", tone: "olive", alt: "Veda swing seat cushion detail" },
+      { motif: "swing", tone: "sand", alt: "Veda swing seat on a veranda", src: "/images/products/veda-swing-seat/1.jpg" },
+      { motif: "swing", tone: "olive", alt: "Veda swing seat cushion detail", src: "/images/products/veda-swing-seat/2.jpg" },
     ],
     material: "Powder-coated steel frame, quick-dry foam, woven fabric",
     frameMaterial: "Powder-coated steel",
@@ -385,8 +385,8 @@ export const PRODUCTS: Product[] = [
       "A narrower take on the Kori silhouette, built for balconies that need one comfortable seat rather than a full lounge set. Shares the same aluminium frame and quick-dry cushion construction as the rest of the Kori range.",
     price: 12999,
     images: [
-      { motif: "armchair", tone: "sand", alt: "Kori Armchair on a small balcony" },
-      { motif: "armchair", tone: "charcoal", alt: "Kori Armchair frame detail" },
+      { motif: "armchair", tone: "sand", alt: "Kori Armchair on a small balcony", src: "/images/products/kori-armchair/2.jpg" },
+      { motif: "armchair", tone: "charcoal", alt: "Kori Armchair frame detail", src: "/images/products/kori-armchair/1.jpg" },
     ],
     material: "Powder-coated aluminium, quick-dry foam, woven outdoor fabric",
     frameMaterial: "Powder-coated aluminium",
@@ -441,8 +441,8 @@ export const PRODUCTS: Product[] = [
       "Expand an existing Avani layout or start a new corner configuration. Matches the frame, foam and fabric of the full Avani range exactly.",
     price: 28999,
     images: [
-      { motif: "sofa", tone: "charcoal", alt: "Avani corner module" },
-      { motif: "sofa", tone: "sand", alt: "Avani corner module fabric detail" },
+      { motif: "sofa", tone: "charcoal", alt: "Avani corner module", src: "/images/products/avani-corner-module/1.jpg" },
+      { motif: "sofa", tone: "sand", alt: "Avani corner module fabric detail", src: "/images/products/avani-corner-module/2.jpg" },
     ],
     material: "Marine-grade aluminium, fast-drain foam, solution-dyed fabric",
     frameMaterial: "Marine-grade aluminium",
@@ -467,7 +467,7 @@ export const PRODUCTS: Product[] = [
     description:
       "A single-serving side table for a drink, a book or a plant, in the same weatherproof composite as the Mira coffee table.",
     price: 4999,
-    images: [{ motif: "side-table", tone: "olive", alt: "Mira side table" }],
+    images: [{ motif: "side-table", tone: "olive", alt: "Mira side table", src: "/images/products/mira-side-table/1.jpg" }],
     material: "Weatherproof composite, powder-coated aluminium",
     frameMaterial: "Powder-coated aluminium",
     colors: [{ name: "Stone Grey", hex: "#C9C4B4" }],
@@ -537,8 +537,8 @@ export const PRODUCTS: Product[] = [
       "A single-seat companion to the Tanaya Daybed, with the same UV-stabilised weave and marine-grade cushion construction, sized for deep, relaxed seating.",
     price: 27999,
     images: [
-      { motif: "lounge-chair", tone: "charcoal", alt: "Tanaya lounge chair on a patio" },
-      { motif: "lounge-chair", tone: "olive", alt: "Tanaya lounge chair weave detail" },
+      { motif: "lounge-chair", tone: "charcoal", alt: "Tanaya lounge chair on a patio", src: "/images/products/tanaya-lounge-chair/1.jpg" },
+      { motif: "lounge-chair", tone: "olive", alt: "Tanaya lounge chair weave detail", src: "/images/products/tanaya-lounge-chair/2.jpg" },
     ],
     material: "UV-stabilised synthetic rattan, marine-grade foam, fade-resistant fabric",
     frameMaterial: "Powder-coated steel with synthetic rattan weave",
@@ -589,7 +589,7 @@ export const PRODUCTS: Product[] = [
     description:
       "A one-seat version of the Veda swing, sized to fit smaller verandas and larger balconies without ceiling mounting.",
     price: 21999,
-    images: [{ motif: "swing", tone: "charcoal", alt: "Veda hanging chair" }],
+    images: [{ motif: "swing", tone: "charcoal", alt: "Veda hanging chair", src: "/images/products/veda-hanging-chair/1.jpg" }],
     material: "Powder-coated steel frame, quick-dry foam, woven fabric",
     frameMaterial: "Powder-coated steel",
     cushionMaterial: "Quick-dry foam with woven fabric cover",
@@ -627,6 +627,11 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
+/** A product is "coming soon" until at least one real photo has been added. */
+export function isComingSoon(product: Product) {
+  return !product.images.some((image) => image.src);
+}
+
 export function getProductBySlug(slug: string) {
   return PRODUCTS.find((product) => product.slug === slug);
 }
@@ -640,7 +645,7 @@ export function getProductsByCollection(collectionSlug: string) {
 }
 
 export function getFeaturedProducts() {
-  return PRODUCTS.filter((product) => product.featured);
+  return PRODUCTS.filter((product) => product.featured && !isComingSoon(product));
 }
 
 export function getRelatedProducts(product: Product, limit = 4) {

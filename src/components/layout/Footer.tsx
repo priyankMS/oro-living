@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { NewsletterForm } from "@/components/home/NewsletterForm";
@@ -46,7 +47,13 @@ export function Footer() {
       <Container className="py-14 lg:py-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.3fr_2fr]">
           <div className="max-w-sm">
-            <p className="font-display text-2xl">{SITE_NAME}</p>
+            <Image
+              src="/logo.svg"
+              alt={SITE_NAME}
+              width={160}
+              height={120}
+              className="h-16 w-auto brightness-0 invert"
+            />
             <p className="mt-4 text-sm leading-relaxed text-ivory/70">
               Bring better living outdoors. Join our list for new collections, restocks and
               seasonal care tips.

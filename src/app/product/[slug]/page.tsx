@@ -6,7 +6,6 @@ import { ProductGallery } from "@/components/product/ProductGallery";
 import { ProductInfo } from "@/components/product/ProductInfo";
 import { ProductReviews } from "@/components/product/ProductReviews";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
-import { StickyAddToCart } from "@/components/product/StickyAddToCart";
 import { getProductBySlug, getRelatedProducts, PRODUCTS } from "@/data/products";
 import { breadcrumbSchema, productSchema } from "@/lib/schema";
 import { SITE_NAME } from "@/lib/site";
@@ -58,7 +57,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   ];
 
   return (
-    <div className="pb-24 lg:pb-0">
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -82,8 +81,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <RelatedProducts products={related} />
         </div>
       </Container>
-
-      <StickyAddToCart product={product} />
     </div>
   );
 }

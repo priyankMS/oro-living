@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { MediaArt } from "@/components/ui/MediaArt";
 import { cn } from "@/lib/utils";
 import type { ProductImage } from "@/data/types";
 
@@ -13,11 +13,13 @@ export function ProductGallery({ images }: { images: ProductImage[] }) {
     <div>
       <div className="flex snap-x snap-mandatory gap-3 overflow-x-auto no-scrollbar lg:hidden">
         {images.map((image, index) => (
-          <PlaceholderArt
+          <MediaArt
             key={index}
+            src={image.src}
             motif={image.motif}
             tone={image.tone}
             alt={image.alt}
+            sizes="90vw"
             className="aspect-square w-[85%] shrink-0 snap-center rounded-md"
           />
         ))}
@@ -37,14 +39,16 @@ export function ProductGallery({ images }: { images: ProductImage[] }) {
                 active === index ? "border-ink" : "border-transparent",
               )}
             >
-              <PlaceholderArt motif={image.motif} tone={image.tone} alt={image.alt} className="aspect-square" />
+              <MediaArt src={image.src} motif={image.motif} tone={image.tone} alt={image.alt} sizes="88px" className="aspect-square" />
             </button>
           ))}
         </div>
-        <PlaceholderArt
+        <MediaArt
+          src={activeImage.src}
           motif={activeImage.motif}
           tone={activeImage.tone}
           alt={activeImage.alt}
+          sizes="(min-width: 1024px) 50vw, 90vw"
           className="aspect-square rounded-md"
         />
       </div>

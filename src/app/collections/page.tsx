@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { MediaArt } from "@/components/ui/MediaArt";
 import { COLLECTIONS } from "@/data/collections";
 
 export const metadata: Metadata = {
@@ -29,10 +29,12 @@ export default function CollectionsPage() {
             href={`/shop?collection=${collection.slug}`}
             className="group relative flex aspect-[4/5] overflow-hidden rounded-md"
           >
-            <PlaceholderArt
+            <MediaArt
+              src={collection.src}
               motif={collection.motif}
               tone={collection.tone}
               alt={collection.name}
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
               className="absolute inset-0 h-full w-full transition-transform duration-500 ease-out group-hover:scale-[1.05]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />

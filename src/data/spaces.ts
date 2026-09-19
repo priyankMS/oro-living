@@ -9,6 +9,7 @@ export const SPACES: Space[] = [
       "Compact, considered pieces that turn a narrow balcony into a proper place to sit down with your coffee.",
     motif: "lounge-chair",
     tone: "olive",
+    src: "/images/spaces/balcony.jpg",
   },
   {
     slug: "garden",
@@ -18,6 +19,7 @@ export const SPACES: Space[] = [
       "Durable, weather-ready furniture built for lawns, flower beds and long afternoons in the shade.",
     motif: "bench",
     tone: "sand",
+    src: "/images/spaces/garden.jpg",
   },
   {
     slug: "veranda",
@@ -27,6 +29,7 @@ export const SPACES: Space[] = [
       "Relaxed seating and side tables suited to a shaded veranda where the outdoors meets the home.",
     motif: "swing",
     tone: "charcoal",
+    src: "/images/spaces/veranda.jpg",
   },
   {
     slug: "terrace",
@@ -36,6 +39,7 @@ export const SPACES: Space[] = [
       "Lounge and dining pieces scaled for rooftop and elevated terraces, with a view worth sitting for.",
     motif: "sofa",
     tone: "olive",
+    src: "/images/spaces/terrace.jpg",
   },
   {
     slug: "patio",
@@ -45,6 +49,7 @@ export const SPACES: Space[] = [
       "Dependable dining and lounge sets designed for the patio you actually use, every single day.",
     motif: "dining-set",
     tone: "sand",
+    src: "/images/spaces/patio.jpg",
   },
   {
     slug: "rooftop",
@@ -54,6 +59,7 @@ export const SPACES: Space[] = [
       "Sculptural, low-maintenance furniture engineered for sun, wind and the best seat in the city.",
     motif: "daybed",
     tone: "charcoal",
+    src: "/images/spaces/rooftop.jpg",
   },
 ];
 

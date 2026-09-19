@@ -9,6 +9,7 @@ export const COLLECTIONS: Collection[] = [
     motif: "lounge-chair",
     tone: "cream",
     spaces: ["balcony"],
+    src: "/images/products/kori-lounge-chair/2.jpg",
   },
   {
     slug: "garden-living",
@@ -18,6 +19,7 @@ export const COLLECTIONS: Collection[] = [
     motif: "bench",
     tone: "olive",
     spaces: ["garden"],
+    src: "/images/collections/garden-living.jpg",
   },
   {
     slug: "terrace-collection",
@@ -27,6 +29,7 @@ export const COLLECTIONS: Collection[] = [
     motif: "sofa",
     tone: "sand",
     spaces: ["terrace", "rooftop"],
+    src: "/images/products/avani-modular-sofa/1.jpg",
   },
   {
     slug: "outdoor-dining",
@@ -36,6 +39,7 @@ export const COLLECTIONS: Collection[] = [
     motif: "dining-set",
     tone: "charcoal",
     spaces: ["patio", "garden", "terrace"],
+    src: "/images/collections/outdoor-dining.jpg",
   },
   {
     slug: "lounge-collection",
@@ -45,6 +49,7 @@ export const COLLECTIONS: Collection[] = [
     motif: "daybed",
     tone: "olive",
     spaces: ["patio", "rooftop", "veranda"],
+    src: "/images/products/tanaya-daybed/3.jpg",
   },
   {
     slug: "weekend-retreat",
@@ -54,6 +59,7 @@ export const COLLECTIONS: Collection[] = [
     motif: "swing",
     tone: "cream",
     spaces: ["veranda", "garden"],
+    src: "/images/products/veda-swing-seat/1.jpg",
   },
 ];
 

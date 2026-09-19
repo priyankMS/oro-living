@@ -5,8 +5,6 @@ export type SortOption = "featured" | "newest" | "price-asc" | "price-desc" | "p
 export const SORT_OPTIONS: { value: SortOption; label: string }[] = [
   { value: "featured", label: "Featured" },
   { value: "newest", label: "Newest" },
-  { value: "price-asc", label: "Price: Low to High" },
-  { value: "price-desc", label: "Price: High to Low" },
   { value: "popular", label: "Most Popular" },
 ];
 

@@ -1,18 +1,19 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-charcoal">
       <div className="absolute inset-0">
-        <PlaceholderArt
-          motif="lounge-chair"
-          tone="charcoal"
-          alt="A warm outdoor lounge setting at golden hour"
-          className="h-full w-full"
-          showIcon={false}
+        <Image
+          src="/images/hero/lounge-scene.jpg"
+          alt="An OROLiving outdoor living setting, poolside at golden hour"
+          fill
+          priority
+          sizes="100vw"
+          className="animate-hero-ken-burns object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/25 to-ink/10" />
       </div>

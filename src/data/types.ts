@@ -18,6 +18,8 @@ export interface ProductImage {
   motif: PlaceholderMotif;
   tone: PlaceholderTone;
   alt: string;
+  /** Path to a real product photo (from /public). When present, this is shown instead of the placeholder art. */
+  src?: string;
 }
 
 export interface Space {
@@ -27,6 +29,8 @@ export interface Space {
   description: string;
   motif: PlaceholderMotif;
   tone: PlaceholderTone;
+  /** Path to a real photo (from /public). When present, this is shown instead of the placeholder art. */
+  src?: string;
 }
 
 export interface Collection {
@@ -36,6 +40,8 @@ export interface Collection {
   motif: PlaceholderMotif;
   tone: PlaceholderTone;
   spaces: string[];
+  /** Path to a real photo (from /public). When present, this is shown instead of the placeholder art. */
+  src?: string;
 }
 
 export type Availability = "in-stock" | "made-to-order" | "out-of-stock";

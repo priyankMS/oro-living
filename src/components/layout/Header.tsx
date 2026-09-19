@@ -1,11 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { SPACES } from "@/data/spaces";
-import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
 import { MobileMenu } from "./MobileMenu";
 
@@ -49,7 +49,6 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const [prevPathname, setPrevPathname] = useState(pathname);
-  const { count: cartCount } = useCart();
   const { count: wishlistCount } = useWishlist();
 
   if (pathname !== prevPathname) {
@@ -72,8 +71,8 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between px-5 sm:px-8 lg:h-20 lg:px-12">
-        <Link href="/" className="font-display text-xl tracking-[0.02em] text-ink lg:text-[22px]">
-          OROLiving
+        <Link href="/" className="flex items-center" aria-label="OROLiving home">
+          <Image src="/logo.svg" alt="OROLiving" width={160} height={120} className="h-12 w-auto lg:h-16" priority />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
@@ -134,12 +133,6 @@ export function Header() {
           <IconLink href="/wishlist" label="Wishlist" count={wishlistCount}>
             <svg viewBox="0 0 24 24" className="h-[19px] w-[19px]" fill="none" stroke="currentColor" strokeWidth={1.6}>
               <path d="M12 20s-7.2-4.5-9.8-9.1C.6 7.7 1.9 4 5.4 3.4c2-.4 3.9.6 5 2.2 1.1-1.6 3-2.6 5-2.2 3.5.6 4.8 4.3 3.2 7.5C19.2 15.5 12 20 12 20Z" />
-            </svg>
-          </IconLink>
-          <IconLink href="/cart" label="Cart" count={cartCount}>
-            <svg viewBox="0 0 24 24" className="h-[19px] w-[19px]" fill="none" stroke="currentColor" strokeWidth={1.6}>
-              <path d="M6 7h12l-1 13H7L6 7Z" strokeLinejoin="round" />
-              <path d="M9 7V5.5a3 3 0 0 1 6 0V7" strokeLinecap="round" />
             </svg>
           </IconLink>
           <button

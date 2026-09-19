@@ -1,22 +1,26 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { MediaArt } from "@/components/ui/MediaArt";
 
 export function LifestyleSection() {
   return (
     <section className="py-16 sm:py-20 lg:py-28">
       <Container className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="relative order-2 grid grid-cols-2 gap-3 sm:gap-4 lg:order-1">
-          <PlaceholderArt
+          <MediaArt
+            src="/images/products/tanaya-daybed/1.jpg"
             motif="daybed"
             tone="olive"
             alt="A rooftop transformed with OROLiving furniture"
+            sizes="(min-width: 1024px) 25vw, 50vw"
             className="aspect-[3/4] rounded-md"
           />
-          <PlaceholderArt
+          <MediaArt
+            src="/images/lifestyle/planter.jpg"
             motif="planter"
             tone="cream"
             alt="Layered planters styled on a terrace"
+            sizes="(min-width: 1024px) 25vw, 50vw"
             className="mt-8 aspect-[3/4] rounded-md sm:mt-10"
           />
         </div>

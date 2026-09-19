@@ -1,4 +1,5 @@
 import { SITE_NAME, SITE_URL } from "./site";
+import { isComingSoon } from "@/data/products";
 import type { Product } from "@/data/types";
 import type { Crumb } from "@/components/ui/Breadcrumbs";
 
@@ -50,10 +51,9 @@ export function productSchema(product: Product) {
     material: product.material,
     offers: {
       "@type": "Offer",
-      priceCurrency: "INR",
-      price: product.price,
-      availability:
-        product.availability === "in-stock"
+      availability: isComingSoon(product)
+        ? "https://schema.org/PreOrder"
+        : product.availability === "in-stock"
           ? "https://schema.org/InStock"
           : product.availability === "made-to-order"
             ? "https://schema.org/LimitedAvailability"

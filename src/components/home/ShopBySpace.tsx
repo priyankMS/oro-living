@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { MediaArt } from "@/components/ui/MediaArt";
 import { SPACES } from "@/data/spaces";
 
 export function ShopBySpace() {
@@ -21,10 +21,12 @@ export function ShopBySpace() {
               href={`/category/${space.slug}`}
               className="group relative flex aspect-[4/5] flex-col justify-end overflow-hidden rounded-md sm:aspect-[3/4]"
             >
-              <PlaceholderArt
+              <MediaArt
+                src={space.src}
                 motif={space.motif}
                 tone={space.tone}
                 alt={`${space.name} furniture setting`}
+                sizes="(min-width: 1024px) 33vw, 50vw"
                 className="absolute inset-0 h-full w-full transition-transform duration-500 ease-out group-hover:scale-[1.06]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/5 to-transparent" />

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { MediaArt } from "@/components/ui/MediaArt";
 import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
@@ -32,7 +32,15 @@ export default function AboutPage() {
   return (
     <div>
       <section className="relative">
-        <PlaceholderArt motif="daybed" tone="olive" alt="An OROLiving outdoor setting" className="aspect-[16/9] w-full sm:aspect-[21/9]" />
+        <MediaArt
+          src="/images/about/hero.jpg"
+          motif="daybed"
+          tone="olive"
+          alt="An OROLiving outdoor setting"
+          sizes="100vw"
+          priority
+          className="aspect-[16/9] w-full sm:aspect-[21/9]"
+        />
       </section>
 
       <Container className="py-10 lg:py-16">
